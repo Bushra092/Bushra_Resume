@@ -4,69 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bushra Khan Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="name">
-        <h2 class="headerName"><a href="./index.html"> Bushra Khan</a></h2>
+      <div class="conatiner">
+        <nav class="navConatiner">
+          <h2>Bushra Khan</h2>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+
+          <ion-icon name="menu-sharp" class="menu"></ion-icon>
+        </nav>
+
+        <div class="headerText">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span> Bushra</span>
+            <br />
+            from Bengloru, India
+          </h1>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Conatct</a></li>
-        </ul>
-      </nav>
     </header>
 
-    <main>
-      <!-- Home Section -->
-      <div class="homeContent">
-        <div class="myInfo">
-          <div class="aboutContent">
-            <p>
-              Hi! I'm <span>Bushra Khan</span> <br />A passionate and creative
-              frontend developer. My goal is to create websites that are not
-              only visually appealing but also user-friendly.
-            </p>
-            <div class="buttonContenet">
-              <button class="btn resumeBtn">My Resume</button>
-              <button class="btn abtMe">About Me</button>
-            </div>
+    <!-- About section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="abutcol1">
+            <img src="./img/image.png" alt="myim" />
           </div>
-          <div class="imgContent">
-            <img src="./assets/img/Laptop.jpg" alt="Laptop Image" />
+          <div class="abutcol2">
+            <h3 class="subTitle">About Me</h3>
+            <p>
+              Welcome to my corner of the internet! I'm Bushra Khan, a Web
+              Developer based in Bengloru. <br />
+              I've been passionate about Web Developer. Whether it's JavaScript,
+              React,Botstrap, HTML, or <br />
+              CSS,I'm constantly driven by the desire to learn, create, and
+              innovate.
+            </p>
+
+            <div class="tabtitles">
+              <p class="tablinks activeLink">Skills</p>
+              <p class="tablinks">Experience</p>
+              <p class="tablinks">Education</p>
+            </div>
+
+            <div class="tabContains activeTab" id="skills">
+              <ul>
+                <li><span>React JS</span></li>
+                <li><span>JavaScript </span></li>
+                <li><span>Bootstrap </span></li>
+                <li><span>HTML </span></li>
+                <li><span>CSS </span></li>
+              </ul>
+            </div>
+
+            <div class="tabContains" id="experience">
+              <ul>
+                <li><span>1+year Experience</span></li>
+                <li><span>JavaScript </span></li>
+                <li><span>Bootstrap </span></li>
+                <li><span>HTML </span></li>
+                <li><span>CSS </span></li>
+              </ul>
+            </div>
+
+            <div class="tabContains" id="education">
+              <ul>
+                <li><span>JavaScript </span></li>
+                <li><span>Bootstrap </span></li>
+                <li><span>HTML </span></li>
+                <li><span>CSS </span></li>
+                <li><span>React JS</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!--  About met -->
-      <!-- <section class="abtMeSection"></section> -->
+    <!-- --------------Services---------- -->
+    <div id="services">
+      <div class="content">
+        <h3 class="subTitle">My Services</h3>
+      </div>
+    </div>
 
-      <!-- Conatct Me -->
-      <section id="contact">
-        <div class="conatctME">
-          <h2>Conatct Me</h2>
-          <p>Conatct me with any Question or Query</p>
-
-          <p mailto="bushrakhan57507@gmail.com">
-            email :
-            <a href="mailto:example@mail.com">bushrakhan57507@gmail.com</a>
-          </p>
-
-          <form action="">
-            <label for="email">Your email* </label>
-            <input type="email" id="email" placeholder="Your Email Address" />
-
-            <label for="message">Message*</label>
-            <textarea name="" id="message" cols="30" rows="5"></textarea>
-
-            <button class="submitBtn" type="submit">Submit</button>
-          </form>
-        </div>
-      </section>
-    </main>
+    <script src="portfolio.js"></script>
   </body>
 </html>

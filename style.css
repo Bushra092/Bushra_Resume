@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #080808;
+  color: #fff;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.conatiner{
+  padding: 10px 10%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+nav h2{
+  letter-spacing: 2px;
+  font-size: xx-large;
+  font-variant: small-caps;
+  font-weight: 700;
+
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #08bede;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: all .5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+nav ul li a.activeLink::after{
+  width: 100%;
+}
+
+.headerText{
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.headerText h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.headerText h1 span{
+  font-variant: small-caps;
+  color: #13c4e4;
+}
+.menu{
+  display: none;
+}
+
+
+ 
+/*------ About css ------ */
+
+#about{
+  padding: 80px 100px;
+  color: #ababab;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.abutcol1 {
+  flex-basis: 35%;
+}
+.abutcol1 img{
+  width: 90%;
+  border-radius: 15px;
+}
+.abutcol2 {
+  flex-basis: 60%;
+}
+.subTitle{
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tabtitles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tablinks{
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tablinks::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: all .5s;
+}
+
+.tablinks.activeLink::after{
+  width: 50%;
+}
+
+
+.tabContains ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tabContains ul li span{
+  color: rgba(240, 248, 255, 0.904);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.tabContains{
+  display: none;
+}
+
+.tabContains.activeTab{
+  display: block;
+}
+
+
+
+
+@media (max-width:800px) {
+  ul{
+    display: none;
+  }header{
+    background-image: url('./img/Laptop.jpg');
+    background-position: left;
+    width: 100%;
+    height: 75vh;
+  } 
+  .menu{
+    display: block;
+    font-size: 40px;
+  }
+  
+  .headerText{
+    margin: 25% 0;
+    font-size: 25px;
+  }
+  .headerText h1{
+    font-size: 35px;
+  }
+#about{
+  height: 100%;
+}
+
+  .abutcol1{
+   flex-basis: 90%;
+}
+.abutcol1 img{
+  width: 100%;
+}
+.abutcol2{
+  flex-basis: 100%;
+}
+.subTitle{
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.abutcol2 p{
+  font-size: 15px;
+}
+
+.tabtitles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tablinks{
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+}
