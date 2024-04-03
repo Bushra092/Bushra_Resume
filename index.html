@@ -5,28 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bushra Khan Portfolio</title>
     <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+      src="https://kit.fontawesome.com/5582069f75.js"
+      crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="conatiner">
         <nav class="navConatiner">
           <h2>Bushra Khan</h2>
-          <ul>
-            <li><a href="">Home</a></li>
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
           </ul>
 
-          <ion-icon name="menu-sharp" class="menu"></ion-icon>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
         </nav>
 
         <div class="headerText">
@@ -98,13 +95,171 @@
       </div>
     </div>
 
-    <!-- --------------Services---------- -->
-    <div id="services">
-      <div class="content">
-        <h3 class="subTitle">My Services</h3>
+    <!-- --------------Certificate---------- -->
+    <div id="certificate">
+      <div class="container">
+        <h3 class="subTitle">My Certificate</h3>
+        <div class="certificateList">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Designe</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores possimus ipsum similique nulla ratione nostrum unde
+              explicabo sunt voluptates delectus quasi minima pariatur illo,
+              ducimus temporibus est tenetur consectetur perferendis!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <h2>Web Designe</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores possimus ipsum similique nulla ratione nostrum unde
+              explicabo sunt voluptates delectus quasi minima pariatur illo,
+              ducimus temporibus est tenetur consectetur perferendis!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <h2>Web Designe</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores possimus ipsum similique nulla ratione nostrum unde
+              explicabo sunt voluptates delectus quasi minima pariatur illo,
+              ducimus temporibus est tenetur consectetur perferendis!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h3 class="subTitle">My Work</h3>
+        <div class="projectList">
+          <div class="project">
+            <img src="./img/Laptop.jpg" alt="" />
+            <div class="workInfo">
+              <h2>Amazon Clone</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                quas soluta nemo libero. Sint itaque ab odio repudiandae
+                dignissimos beatae hic possimus enim, fugit nulla voluptas
+                quibusdam esse doloremque? Minus!
+              </p>
+              <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./img/Laptop.jpg" alt="" />
+            <div class="workInfo">
+              <h2>Amazon Clone</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                quas soluta nemo libero. Sint itaque ab odio repudiandae
+                dignissimos beatae hic possimus enim, fugit nulla voluptas
+                quibusdam esse doloremque? Minus!
+              </p>
+              <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./img/Laptop.jpg" alt="" />
+            <div class="workInfo">
+              <h2>Amazon Clone</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                quas soluta nemo libero. Sint itaque ab odio repudiandae
+                dignissimos beatae hic possimus enim, fugit nulla voluptas
+                quibusdam esse doloremque? Minus!
+              </p>
+              <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="" class="btn">See More</a>
+      </div>
+
+      <!-- Contact  -->
+      <div id="contact">
+        <div class="conatiner">
+          <div class="row">
+            <div class="contactLeft">
+              <h3 class="subTitle">Contact Me</h3>
+              <p>
+                <i class="fa-solid fa-paper-plane"></i>bushrakhan57507@gmail.com
+              </p>
+              <p><i class="fa-solid fa-phone"></i>01234657900</p>
+              <div class="socialICon">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </div>
+              <a href="img/mycv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contactRight">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  id=""
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  id=""
+                  placeholder="Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  id=""
+                  placeholder="Your Message"
+                  rows="5"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyRight">
+        <p>
+          copyright &copy Bushra Khan <i class="fa-solid fa-code"></i> | All
+          Rights Reserved.
+        </p>
       </div>
     </div>
 
     <script src="portfolio.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxPL0jZTBTqwl-zYGlXMRTgFyI9-yKDcMXrVK3PZMCzqasEAagKJl-2tBTokBBkvipI/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Send Succussfully";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
