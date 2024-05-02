@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root{
+  --color: rgba(5, 80, 105, 0.288);
+}
 *{
   padding: 0;
   margin: 0;
@@ -91,6 +95,12 @@ nav ul li a.activeLink::after{
   color: #13c4e4;
 }
 
+.description{
+  width: 500px;
+  font-size: 19px;
+  margin-top: 15px;
+  line-height: 30px;
+}
 
  
 /*------ About css ------ */
@@ -115,60 +125,75 @@ nav ul li a.activeLink::after{
 .abutcol2 {
   flex-basis: 60%;
 }
+
 .subTitle{
   font-size: 50px;
   font-weight: 600;
   color: #fff;
+}
+.nameHeading{
+  letter-spacing: 1.5px;
+  font-size: x-large;
+  font-variant: small-caps;
+color: #00ddffd3;
+}
+.abutcol2 p {
+  font-size: 1.25rem;
+  font-weight:500 ;
+  line-height: 35px;
+}
 
+.skillSet{
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
 
-.tabtitles{
-  display: flex;
-  margin: 20px 0 40px;
+
+
+.skilltitle{
+  padding: 15px;
 }
-.tablinks{
+.skill{
+  color: rgba(240, 248, 255, 0.79);
+  letter-spacing: 5px;
   margin-right: 15px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 16px;
   position: relative;
 }
 
-.tablinks::after{
+.skill::before{
   content: '';
   width: 0;
-  height: 3px;
-  background-color: #ff004f;
+  height: 2.5px;
+  background-color: #9C29AC;
   position: absolute;
   left: 0;
   bottom: -8px;
   transition: all .5s;
 }
 
-.tablinks.activeLink::after{
-  width: 50%;
+.skill::before{
+  width:5%;
 }
 
 
-.tabContains ul li{
-  list-style: none;
-  margin: 10px 0;
+.skillContent ul li{
+list-style: none; 
+  margin: 12px 0;
 }
 
-.tabContains ul li span{
+.skillContent ul li span{
   color: rgba(240, 248, 255, 0.904);
   font-weight: 500;
   letter-spacing: 1px;
 }
 
-.tabContains{
-  display: none;
-}
 
-.tabContains.activeTab{
-  display: block;
-}
 #certificate{
   padding:30px 0 ;
 }
@@ -178,16 +203,18 @@ nav ul li a.activeLink::after{
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
-  
+  grid-gap: 40px;
+  margin-top: 50px; 
 }
 
 .certificateList div{
-  background: #262626;
+  background-color: rgba(5, 80, 105, 0.288);
+  max-width: 400px;
+  height: 300px;
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
   border-radius: 10px;
-
 transition: all .5s  ;
 }
 
@@ -197,6 +224,16 @@ transition: all .5s  ;
   color: aliceblue;
 }
 
+.certificateList div h1{
+  color: aliceblue;
+  padding: 10px 0;
+}
+
+.certificateList div p{
+  line-height: 1.2rem;
+  font-weight: 550;
+}
+
 .certificateList div a{
   text-decoration: none;
   color: #fff;
@@ -204,16 +241,15 @@ transition: all .5s  ;
   margin-top: 20px;
   display: inline-block;
   padding-bottom: 5px;
-  transition: all .5s ease;
+  transition: all .4s ease;
 }
 
 .certificateList div a:hover{
   border-bottom: 2px solid ;
 }
 .certificateList div:hover{
-  background: #001a25;
+  background-color:rgba(45, 45, 45, 0.807);
   transform: translate(0,-10px);
-
 }
 
 /* portfolio */
@@ -238,8 +274,9 @@ transition: all .5s  ;
   width: 100%;
   display: block;
   border-radius: 10px;
-  transition: all .5s
+  transition: all .5s;
 }
+
 
 .workInfo{
   width: 100%;
@@ -275,6 +312,7 @@ transition: all .5s  ;
 
 .project:hover img{
   transform: scale(1.1);
+  
 }
 .project:hover .workInfo{
   height: 100%;
@@ -394,11 +432,18 @@ nav .fas{
     background-image: url('./img/phone-background.png');
   }
   .headerText{
-    margin-top: 90%;
-    font-size: 16px
+    margin-top: 80%;
+    font-size: 16px;
   }
   .headerText h1{
     font-size: 30px;
+  }
+
+  .description{
+    width: 450px;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 25px;
   }
   nav .fas{
     display: block;
@@ -439,12 +484,16 @@ flex-basis: 100%;
   .abutcol2 p{
     line-height: 25px;
   }
-  .tablinks{
+  .skill{
     font-size: 16px;
     margin-right: 25px;
   }
   .contactLeft,.contactRight{
     flex-basis: 100%;
+}
+
+.skillSet{
+  display: block;
 }
 
 .copyRight{
